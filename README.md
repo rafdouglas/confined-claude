@@ -4,6 +4,8 @@ Run [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) insid
 
 Each project gets its own sandboxed environment with persistent Python virtual environments and tools. Auth credentials are copied from your host on each launch, but the container maintains its **own** plugin and marketplace ecosystem — your host `~/.claude/` is never mounted and never modified.
 
+![cover image](./confined_claude.png)
+
 ## Why
 
 Claude Code is powerful but runs directly on your machine. **Confined Claude** wraps it in a Docker container so that:
